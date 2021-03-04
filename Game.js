@@ -41,7 +41,7 @@ class Game {
     Player.getPlayerInfo();
 
     if(allPlayers !== undefined){
-      var display_position = 130;
+      //var display_position = 130;
       var index = 0
       var x = 0
       var y 
@@ -59,9 +59,9 @@ class Game {
         else
           arr[index-1].shapeColor = "black";
         
-        display_position=+20;
-        textSize(15);
-        text(allPlayers[plr].name + ": " + allPlayers[plr].distance, 120,display_position)
+        //display_position=+20;
+        //textSize(15);
+        //text(allPlayers[plr].name + ": " + allPlayers[plr].distance, 120,display_position)
 
     
     }
@@ -71,5 +71,6 @@ class Game {
       player.update();
     }
   }
+    drawSprites();
 }
 }
